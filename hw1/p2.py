@@ -123,3 +123,5 @@ def multibit_subtractor(A, B):
 
     """
     # TODO: implement the function here
+    negB = multibit_negative(B)
+    return multibit_adder(A, B)
