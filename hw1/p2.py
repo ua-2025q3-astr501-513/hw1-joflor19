@@ -94,7 +94,7 @@ def multibit_negative(A):
     #for every bit in the length of input, switch to inverse of the bit
     for i in range(n):
         
-        S.append(NOT(A[I]))
+        S.append(NOT(A[i]))
         sig_bit = [1] + ([0]*(n-1))
 
     return multibit_adder(S, sig_bit) 
