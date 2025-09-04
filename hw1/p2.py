@@ -95,7 +95,8 @@ def multibit_negative(A):
     for i in range(n):
         
         S.append(NOT(A[i]))
-        sig_bit = [1] + ([0]*(n-1))
+
+    sig_bit = [1] + ([0]*(n-1))
 
     return multibit_adder(S, sig_bit) 
     
