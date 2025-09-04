@@ -88,6 +88,18 @@ def multibit_negative(A):
 
     """
     # TODO: implement the function here
+    n = len(A)
+    S = []
+
+    #for every bit in the length of input, switch to inverse of the bit
+    for i in range(n):
+        
+        S.append(NOT(A[I]))
+        sig_bit = [1] + ([0]*(n-1))
+
+    return multibit_adder(S, sig_bit) 
+    
+
 
 # We are now ready to implement subtraction using multibit_adder() and
 # multibit_negative().
