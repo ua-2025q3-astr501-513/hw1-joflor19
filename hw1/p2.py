@@ -91,11 +91,12 @@ def multibit_negative(A):
     n = len(A)
     S = []
 
-    #for every bit in the length of input, switch to inverse of the bit
+    #for every bit in the length of input, switch to inverse of the bit and add to new list
     for i in range(n):
         
         S.append(NOT(A[i]))
 
+    #change significant bit for negative
     sig_bit = [1] + ([0]*(n-1))
 
     return multibit_adder(S, sig_bit) 
@@ -123,8 +124,9 @@ def multibit_subtractor(A, B):
 
     """
     # TODO: implement the function here
+    #negate B
     negB = multibit_negative(B)
+
+    #add A+ (-B)
     return multibit_adder(A, negB)
 
-test = multibit_subtractor([0, 1, 1], [1, 0, 1])
-print("Results: ", test)
