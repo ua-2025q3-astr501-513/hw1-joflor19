@@ -124,4 +124,7 @@ def multibit_subtractor(A, B):
     """
     # TODO: implement the function here
     negB = multibit_negative(B)
-    return multibit_adder(A, B)
+    return multibit_adder(A, negB)
+
+test = multibit_subtractor([0, 1, 1], [1, 0, 1])
+print("Results: ", test)
