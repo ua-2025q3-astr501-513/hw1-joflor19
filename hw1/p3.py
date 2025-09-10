@@ -67,6 +67,7 @@ def quadratic(a, b, c):
     """
     # TODO: implement the stable quadratic equation solver here
 
+
     if b >= 0:
         sign_b = 1
     else:
