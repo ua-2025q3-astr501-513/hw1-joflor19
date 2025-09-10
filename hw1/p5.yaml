@@ -38,9 +38,20 @@
 
 # TODO: Edit this sample idea.
 
-- topic: Numerical Linear Algebra
-  idea:  Develop a fast matrix multiplication algorithm to reduce
-         energy consumption during deep learning inference.
+- topic: Fourier Transform and Spectral Analysis
+  idea: Using publicly available raw stellar data (such as from MAST), apply signal 
+  processing techniques (denoising, normalization, filtering) to analyze spectra
+
+- topic: Root Finding and Optimization Methods
+  idea: Comparison of optimization techniques in galaxy profile simulations. 
+  Synthesize a basic galaxy image and fit a model to the image. Compare different
+  optimization methods to minimize errors. 
+
+- topic: Numerical Integration of Functions
+  idea: Using Newton's laws of motion, simulate motion through different integration
+  methods and determine the orbital period. Compare this period to the period found by 
+  Kepler's laws. Determine errors and compare across different methods
+        
 
 # TODO: Add two more project ideas below, following the same format as
 # the example above.
