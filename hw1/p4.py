@@ -46,9 +46,24 @@ class CoupledOscillators:
 
         """
         # TODO: Construct the stiffness matrix K
+        #should i be using self? seems to be fine without initializing the attribute
+        K = np.zeros(len(X0), len(X0))
+
+        #values on the diagonal
+        for i in range(len(X0))
+            K[i, i] = 2*k/m
+
+        #off-diagonal values
+        for i in range(len(X0)-1)
+            K[i, i+1] = -k/m
+            K[i+1, i] = -k/m
         # TODO: Solve the eigenvalue problem for K to find normal modes
+        eigVals, eigVecs = np.linalg.eig(K)
         # TODO: Store angular frequencies and eigenvectors
+        self.omega = np.sqrt(eigVals)
+        
         # TODO: Compute initial modal amplitudes M0 (normal mode decomposition)
+        self.M0 = np.linalg.solve(eigVecs, X0)
 
     def __call__(self, t):
         """Calculate the displacements of the oscillators at time t.
@@ -61,7 +76,8 @@ class CoupledOscillators:
 
         """
         # TODO: Reconstruct the displacements from normal modes
-
+        dM = self.M0 * cos(self.omega * t)
+        return self eigVecs @ dM
 
 if __name__ == "__main__":
 
