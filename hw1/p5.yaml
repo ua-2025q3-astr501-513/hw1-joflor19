@@ -41,6 +41,11 @@
 - topic: Fourier Transform and Spectral Analysis
   idea: Using publicly available raw stellar data (such as from MAST), apply signal 
   processing techniques (denoising, normalization, filtering) to analyze spectra
+      
+# TODO: Add two more project ideas below, following the same format as
+# the example above.
+# Remember to ensure that each idea is distinct and concise, and each
+# "topic" must be one of the listed course topics.
 
 - topic: Root Finding and Optimization Methods
   idea: Comparison of optimization techniques in galaxy profile simulations. 
@@ -51,9 +56,3 @@
   idea: Using Newton's laws of motion, simulate motion through different integration
   methods and determine the orbital period. Compare this period to the period found by 
   Kepler's laws. Determine errors and compare across different methods
-        
-
-# TODO: Add two more project ideas below, following the same format as
-# the example above.
-# Remember to ensure that each idea is distinct and concise, and each
-# "topic" must be one of the listed course topics.
