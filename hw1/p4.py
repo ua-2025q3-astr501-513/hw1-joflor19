@@ -50,11 +50,11 @@ class CoupledOscillators:
         K = np.zeros(len(X0), len(X0))
 
         #values on the diagonal
-        for i in range(len(X0))
+        for i in range(len(X0)):
             K[i, i] = 2*k/m
 
         #off-diagonal values
-        for i in range(len(X0)-1)
+        for i in range(len(X0)-1):
             K[i, i+1] = -k/m
             K[i+1, i] = -k/m
         # TODO: Solve the eigenvalue problem for K to find normal modes
