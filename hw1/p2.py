@@ -99,7 +99,7 @@ def multibit_negative(A):
     #change significant bit for negative
     sig_bit = [1] + [0]*(n-1)
 
-    return multibit_adder(S, sig_bit, FALSE) 
+    return multibit_adder(S, sig_bit) 
     
 
 
