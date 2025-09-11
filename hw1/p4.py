@@ -77,7 +77,7 @@ class CoupledOscillators:
         """
         # TODO: Reconstruct the displacements from normal modes
         dM = self.M0 * cos(self.omega * t)
-        return self eigVecs @ dM
+        return self.eigVecs @ dM
 
 if __name__ == "__main__":
 
